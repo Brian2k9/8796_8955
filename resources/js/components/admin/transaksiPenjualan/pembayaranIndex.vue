@@ -52,11 +52,7 @@
                           class="button is-warning">
                           <i class="fas fa-money-bill-wave"></i>
                        </router-link>
-                        <button 
-                          class="button is-danger" 
-                          v-on:click="konfirmasiHapus(transaksi.id,index,transaksi.no_plat_kendaraan)">
-                          <i class="fa fa-trash"></i>
-                        </button>
+                       
                         </td>
                       </tr>
                     </tbody>

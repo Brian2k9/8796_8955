@@ -70,10 +70,13 @@ import JumlahJasaService from '../components/admin/laporan/JumlahJasaService.vue
 import SisaStokBulanan from '../components/admin/laporan/SisaStokBulanan.vue'
 import SparepartTerlaris from '../components/admin/laporan/SparepartTerlaris.vue'
 
-import RootPelanggan from '../components/start/rootPelanggan.vue'
-import HomePelanggan from '../components/start/welcomePelanggan.vue'
-import DaftarSparepart from '../components/start/daftarSparepart.vue'
-import RiwayatPelanggan from '../components/start/riwayatPelanggan.vue'
+import RootPelanggan from '../components/customer/rootPelanggan.vue'
+import HomePelanggan from '../components/customer/welcomePelanggan.vue'
+import DaftarSparepart from '../components/customer/daftarSparepart.vue'
+import RiwayatPelanggan from '../components/customer/riwayatPelanggan.vue'
+import About from '../components/customer/about.vue'
+
+import Login from '../components/login.vue'
 
 const routes = [
     {
@@ -337,8 +340,17 @@ const routes = [
             {
                 path: '/customer_page/riwayat_pelanggan',
                 component: RiwayatPelanggan
+            },
+            {
+                path: '/customer_page/about',
+                component: About
             }
         ]
+    },
+
+    {
+        path: '/login',
+        component: Login
     }
     
 

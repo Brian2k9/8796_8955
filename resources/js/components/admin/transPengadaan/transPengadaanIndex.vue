@@ -39,7 +39,7 @@
                         <td>{{ trans_pengadaan.total_harga_pengadaan }}</td>
                         <td>{{ trans_pengadaan.status_pengadaan }}</td>
                         <td v-if="trans_pengadaan.status_pengadaan === 'sudah diterima'">
-                        
+                          
                         </td>
                         <td v-else>
                           <router-link 

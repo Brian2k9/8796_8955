@@ -50,6 +50,8 @@ Route::get('/pegawai/showByName/{nama_pegawai}','pegawaicontroller@showByName');
 Route::post('/pegawai/store','pegawaicontroller@store');
 Route::put('/pegawai/update/{id}','pegawaicontroller@update');
 Route::delete('/pegawai/{id}','pegawaicontroller@destroy');
+Route::post('/pegawai/loginweb','pegawaicontroller@loginWeb');
+
 Route::post('/pegawai/login','pegawaicontroller@login');
 
 Route::get('/mobile/pegawai','pegawaicontroller@indexMobile');

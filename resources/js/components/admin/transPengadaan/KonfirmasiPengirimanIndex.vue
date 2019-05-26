@@ -45,11 +45,7 @@
                           class="button is-warning">
                           <i class="fas fa-box"></i>
                        </router-link>
-                        <button 
-                          class="button is-danger" 
-                          v-on:click="konfirmasiHapus(trans_pengadaan.id,index)">
-                          <i class="fa fa-trash"></i>
-                        </button>
+                        
                         </td>
                       </tr>
                     </tbody>

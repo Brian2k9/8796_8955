@@ -50,7 +50,7 @@
                         <td>{{ transaksi.no_plat_kendaraan }}</td>
                         <td>{{ transaksi.tanggal_penjualan }}</td>
                         <td v-if="transaksi.status_transaksi && transaksi.status_pembayaran === 'sudah'">
-                        
+                         
                         </td>
                          <td v-else>
                         <router-link 

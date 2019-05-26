@@ -65,7 +65,7 @@ class transpenjualancontroller extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'no_plat_kendaraan' => 'required|unique:trans_penjualan,no_plat_kendaraan|max:8',
+            'no_plat_kendaraan' => 'required|max:8',
             
         ]);
 
@@ -138,7 +138,7 @@ class transpenjualancontroller extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'no_plat_kendaraan' => 'required|unique:trans_penjualan,no_plat_kendaraan,'.$id.'|max:8',
+            'no_plat_kendaraan' => 'required|max:8',
             ]);
 
         $transpenjualan = trans_penjualan::where('id', $id)->first();

@@ -14,7 +14,7 @@ class pelanggancontroller extends Controller
      */
     public function index()
     {
-        $pelanggans = Pelanggan::paginate(10);
+        $pelanggans = Pelanggan::paginate(100);
 
         return response()->json($pelanggans, 200);
     }

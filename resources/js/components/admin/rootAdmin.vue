@@ -106,9 +106,9 @@
       <div class="navbar-item">
         <div class="buttons">
           
-          <a class="button is-light">
+          <router-link to="/login" class="button is-light">
             Log Out
-          </a>
+          </router-link>
         </div>
       </div>
     </div>

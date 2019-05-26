@@ -14,7 +14,7 @@ class jasaservicecontroller extends Controller
      */
     public function index()
     {
-        $jasas = jasa_service::paginate(10);
+        $jasas = jasa_service::paginate(100);
 
         return response()->json($jasas, 200);
     }
