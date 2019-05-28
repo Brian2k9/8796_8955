@@ -39,7 +39,7 @@
                         <th>Nama Sparepart</th>
                         <th>Merk Sparepart</th>
                         <th>Tipe Sparepart</th>
-                       
+                        <th>Gambar Sparepart</th>
                         <th>Jumlah Stok Sparepart</th>
                         <th>Harga Jual Sparepart</th>
                         
@@ -52,7 +52,7 @@
                         <td>{{ sparepart.nama_sparepart }}</td>
                         <td>{{ sparepart.merk_sparepart }}</td>
                         <td>{{ sparepart.tipe_sparepart }}</td>
-                       
+                        <td><img :src="'/8796_8955/public/images/sparepart/' + sparepart.gambar_sparepart" v-bind:style="{width: '100px', height: '100px' }"></td>
                         <td>{{ sparepart.jumlah_stok_sparepart }}</td>
                         
                         <td>{{ sparepart.harga_jual_sparepart }}</td>

@@ -180,6 +180,7 @@ Route::get('/mobile/trans_pengadaan', 'transpengadaancontroller@indexMobile');
 Route::post('/mobile/trans_pengadaan/store','transpengadaancontroller@storeMobile');
 Route::put('/mobile/trans_pengadaan/update/{id}','transpengadaancontroller@updateMobile');
 Route::delete('/mobile/trans_pengadaan/{id}','transpengadaancontroller@destroyMobile');
+Route::get('/mobile/trans_pengadaan/detail/getById/{id}', 'detailpengadaancontroller@getDetailById');
 
 /////////////////////////////////////////////////////////////////////////////////////////////Detail Trans Pengadaan
 Route::get('/detail_trans_pengadaan', 'detailpengadaancontroller@index');
